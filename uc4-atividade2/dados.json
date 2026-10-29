@@ -1,0 +1,57 @@
+[
+{
+  "model": "academia.aluno",
+  "pk": 1,
+  "fields": {
+    "nome": "Ana Souza",
+    "idade": 25,
+    "data_matricula": "2026-01-10",
+    "ativo": true,
+    "mensalidade": "99.90"
+  }
+},
+{
+  "model": "academia.aluno",
+  "pk": 2,
+  "fields": {
+    "nome": "Bruno Lima",
+    "idade": 31,
+    "data_matricula": "2026-02-03",
+    "ativo": true,
+    "mensalidade": "99.90"
+  }
+},
+{
+  "model": "academia.aluno",
+  "pk": 3,
+  "fields": {
+    "nome": "Carla Dias",
+    "idade": 19,
+    "data_matricula": "2026-03-15",
+    "ativo": false,
+    "mensalidade": "79.90"
+  }
+},
+{
+  "model": "academia.aluno",
+  "pk": 4,
+  "fields": {
+    "nome": "Diego Alves",
+    "idade": 42,
+    "data_matricula": "2025-11-20",
+    "ativo": true,
+    "mensalidade": "129.90"
+  }
+},
+{
+  "model": "academia.aluno",
+  "pk": 5,
+  "fields": {
+    "nome": "Elisa Rocha",
+    "idade": 28,
+    "data_matricula": "2026-04-01",
+    "ativo": true,
+    "mensalidade": "99.90"
+  }
+}
+]
