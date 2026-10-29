@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Aluno
+
+
+def lista_alunos(request):
+    alunos = Aluno.objects.all().order_by("nome")
+    return render(request, "academia/lista_alunos.html", {"alunos": alunos})

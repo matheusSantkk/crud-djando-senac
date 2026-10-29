@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alunos</title>
+</head>
+<body>
+    <h1>Alunos da academia</h1>
+    <table border="1" cellpadding="6">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Matrícula</th>
+            <th>Ativo</th>
+            <th>Mensalidade</th>
+        </tr>
+        {% for a in alunos %}
+        <tr>
+            <td>{{ a.nome }}</td>
+            <td>{{ a.idade }}</td>
+            <td>{{ a.data_matricula }}</td>
+            <td>{{ a.ativo|yesno:"Sim,Não" }}</td>
+            <td>R$ {{ a.mensalidade }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5">Nenhum aluno cadastrado.</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
